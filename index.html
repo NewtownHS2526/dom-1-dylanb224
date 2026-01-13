@@ -4,12 +4,12 @@
     <title>Shopping Cart - QuerySelector Lesson</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="./style.css" type="text/css" />
-    
-    <!-- 
+   
+    <!--
       ============================================
       SCRIPT TAG PLACEMENT - IMPORTANT CONCEPT!
       ============================================
-      
+     
       WHY WE USE 'defer' IN THE <head>:
       - The 'defer' attribute tells the browser to download the script
         while parsing the HTML, but WAIT to execute it until AFTER
@@ -18,19 +18,19 @@
         while still ensuring all HTML elements exist when the script runs.
       - Benefits: Scripts download in parallel with HTML parsing (faster),
         but execute in order after DOM is ready (no errors).
-      
+     
       ALTERNATIVE APPROACH (without defer):
       If we don't use 'defer', we must place the script tag RIGHT BEFORE
       the closing </body> tag. This ensures all HTML elements are loaded
       before the script tries to access them.
-      
+     
       Example without defer (see bottom of file):
-      <script src="script.js"></script>  <!-- No defer needed here! -->
-      </body>
-      
+      <script src="script.js"></script>  <No defer needed here! -->
+     
+     
       ============================================
-    -->
-    <script src="script.js" defer></script>
+ 
+    <!--<script src="script.js" defer></script> -->
   </head>
   <body>
     <div class="container mx-auto px-4 py-8 text-center">
@@ -49,28 +49,25 @@
         <h4 class="text-xl font-semibold mt-4">Your total: $<span id="total-span">0</span></h4>
       </section>
     </div>
-    
-    <!-- 
+   
+    <!--
       ============================================
       ALTERNATIVE: Script without defer
       ============================================
-      
+     
       If you DON'T use the 'defer' attribute, you can place your script
       tag here (right before closing </body> tag) instead of in the <head>.
-      
+     
       This works because by the time the browser reaches this point,
       all HTML elements above have already been parsed and are available
       in the DOM.
-      
+     
       To use this approach:
       1. Remove 'defer' from the script tag in <head>
       2. Remove the script tag from <head>
       3. Uncomment the script tag below:
-      
-      <script src="script.js"></script>
-      
-      ============================================
-    -->
-    <!-- <script src="script.js"></script> -->
+       -->
+     
+    <script src="script.js"></script>
   </body>
-</html>
+</html>........................    0                                                00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 
